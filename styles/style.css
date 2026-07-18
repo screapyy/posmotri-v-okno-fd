@@ -54,11 +54,11 @@ ol {
 
 .content {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end; 
+  flex-direction: row; 
   gap: 30px;
   width: 1140px;
   margin-left: 15px;
+  align-items: flex-end;
 }
 
 .result {
