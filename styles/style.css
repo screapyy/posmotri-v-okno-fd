@@ -55,10 +55,10 @@ ol {
 .content {
   display: flex;
   flex-direction: row;
+  align-items: flex-end; 
   gap: 30px;
   width: 1140px;
   margin-left: 15px;
-  align-items: flex-end;
 }
 
 .result {
@@ -68,11 +68,12 @@ ol {
 
 .content__list-container {
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: auto;
   width: 399px;
   height: 298px;
   gap: 10px;
   position: relative;
+  padding: 3px;
 }
 
 .content__list {
@@ -109,7 +110,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 103px;
 }
 
 .content__video-card-thumbnail {
@@ -125,7 +125,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 5px;
@@ -133,7 +133,7 @@ ol {
 
 .title {
   margin-bottom: 26px;
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 75px;
@@ -152,7 +152,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: bold;
   overflow: hidden;
@@ -162,11 +162,11 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed', serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   line-height: 16.2px;
   font-size: 18px;
   font-weight: normal;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -202,7 +202,7 @@ ol {
 }
 
 .search-form__textfield {
-  border: solid 1px #fff;
+  border: solid 1px currentColor;
   border-left: none;
   border-right: none;
   color: #fff;
@@ -210,6 +210,8 @@ ol {
   appearance: none;
   font-weight: 400;
   font-size: 18px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  min-width: 225px;
 }
 
 .search-form__textfield::placeholder {
@@ -259,7 +261,7 @@ ol {
 .button {
   border: solid 1px #fff;
   color: #fff;
-  font-family: 'Fira Sans Condensed', serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   background-color: transparent;
   font-size: 18px;
@@ -305,10 +307,6 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-}
-
-.content__list-item {
-  padding: 3px;
 }
 
 .content__card-link:focus {
